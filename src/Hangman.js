@@ -74,7 +74,8 @@ class Hangman extends Component {
     let gameOver = this.state.nWrong < this.props.maxWrong;
     let gameWin = this.guessedWord().join("") === this.state.answer;
 
-    /* after win the game when user click the reset button so that hide state becomes true then game win variable become false it will show all buttons again  */
+    /* after win the game when user click the reset button so that hide state becomes true then game win variable become false it will show all buttons again
+      */
     this.state.hide ? !gameWin : gameWin;
 
     /* tack is user game win or not if user win the game so the gameWin variable becomes true and display none property will fire else nothing is happen (for show or hide buttons pad) */
